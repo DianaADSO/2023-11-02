@@ -10,7 +10,8 @@ Original file is located at
 #autor: Diana
 
 
-def area(a,b): #Función para cálcular el área
+
+def area(a,b): #Función para cálcular el área de un cuadrado
   return a * b #retorna el resultado del cálculo
 #------Despliegue---------
 
@@ -20,3 +21,53 @@ b = int(input("Digite la altura "))#Recibe el valor de la altura
 
 c = area(a,b) #Se le agrega el cálculo a una variable
 print("El área del cuadrado es:"," ",c)#Imprime la variable
+
+#-----------------------------------------------------------------------
+
+
+def triangulo(b,a): #Función para cálcular el área de un triángulo
+  salida = 0 #Se inicializa variable
+  salida = b * a / 2 #Se hace el cálculo
+  return salida #Retorna el resultado de un número
+#-------------Despliegue--------- --
+
+b = int(input("Digite la base "))#Recibe el valor de la base
+a = int(input("Digite la altura "))#Recibe el valor de la altura
+
+c = triangulo(b,a) #Se le agrega el cálculo a una variable
+print("El área del triángulo es:"," ",c)#Imprime la variable
+
+
+#-----------------------------------------------------------------------
+
+
+def circulo(r): #Función para cálcular el área de un circulo
+  salida = 0 #Se inicializa variable
+  salida = (r**2) * 3.14 #Se hace el cálculo
+  return salida #Retorna el resultado de un número
+#-------------Despliegue--------- --
+
+r = int(input("Digite el radio "))#Recibe el valor de la base
+
+
+c = circulo(r) #Se le agrega el cálculo a una variable
+print("El área del circulo es:"," ",c)#Imprime la variable
+
+
+#-----------------------------------------------------------------------
+
+def edad_calculo(edad): #Función para verificar si una persona es mayor de edad o no
+  salida = 0
+  if edad >= 18: #Afrimativo
+    salida = print("La persona es mayor de edad") #Mensaje informativo
+  else : #negativa
+    salida = print("La persona es menor de edad") #Mensaje informativo
+
+  return salida #Retorna el resultado de un número
+
+#-------------Despliegue--------- ------
+
+edad = int(input("Digite la edad "))#Recibe el valor de la base
+
+c = edad_calculo(edad) #Se le agrega el cálculo a una variable
+print(c) #Imprime la variable
